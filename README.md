@@ -55,8 +55,6 @@ pb | padding-bottom
 ```
 ## Flex Box
 ```
-.d-flex
-.d-inline-flex
 .flex-fill
 .flex-row
 .flex-column
@@ -103,6 +101,84 @@ pb | padding-bottom
 .text-center
 .text-no-wrap
 ```
+## Display
+```
+.d-none 
+.d-inline 
+.d-inline-block 
+.d-block 
+.d-table 
+.d-table-row 
+.d-table-cell 
+.d-flex 
+.d-inline-flex 
+.d-grid 
+```
+## Position
+```
+.position-static 
+.position-relative 
+.position-absolute 
+.position-fixed 
+.position-sticky 
+```
+## Overflow
+```
+.overflow-visible 
+.overflow-hidden 
+.overflow-scroll 
+.overflow-auto 
+.overflow-x-visible 
+.overflow-x-hidden 
+.overflow-x-scroll 
+.overflow-x-auto 
+.overflow-y-visible 
+.overflow-y-hidden 
+.overflow-y-scroll 
+.overflow-y-auto 
+```
+## Z-Index
+```
+.z-1
+.z-10
+.z-100
+.z-1000
+.z-10000
+```
+## Height & Width
+```
+.w-90
+.w-100
+.w-auto
+.h-100
+.h-100vh
+.h-auto
+```
+## Responsiveness
+We have four responsive breakpoints `sm` `md` `lg` `xlg`
+```
+Device Width | Class Prefix
+------------- | -------------
+576px | sm
+768px | md
+992px | lg
+1200px | xlg
+```
+#### Example:
+
+```html
+<div class="sm-position-absolute" >
+    <div class="d-none md-d-block">My device width is less than 768px</div>
+    <div class="d-block md-d-none">My device width is more than 768px</div>
+</div>
+```
+## Responsive Prefix Available For
+- flex
+- Justify
+- Display
+- Align
+- Position
+
 ## References
 
 - https://mdzahin.github.io/antd-utility-class/index.css
