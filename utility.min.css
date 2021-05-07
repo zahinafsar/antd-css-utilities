@@ -994,7 +994,7 @@
 }
 /*RESPONSIVE*/
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     /*FLEX*/
     .sm-flex-fill{
         flex:1 1 auto!important
@@ -1149,7 +1149,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     /*FLEX*/
     .md-flex-fill{
         flex:1 1 auto!important
@@ -1304,7 +1304,7 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     /*FLEX*/
     .lg-flex-fill{
         flex:1 1 auto!important
@@ -1459,7 +1459,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     /*FLEX*/
     .xlg-flex-fill{
         flex:1 1 auto!important
