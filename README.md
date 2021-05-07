@@ -156,14 +156,13 @@ pb | padding-bottom
 ```
 ## Responsiveness
 We have four responsive breakpoints `sm` `md` `lg` `xlg`
-```
 Device Width | Class Prefix
 ------------- | -------------
 576px | sm
 768px | md
 992px | lg
 1200px | xlg
-```
+
 #### Example:
 
 ```html
