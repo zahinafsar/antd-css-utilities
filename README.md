@@ -1,7 +1,7 @@
 ## Ant Design CSS Utilities
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) ![npm version](https://img.shields.io/npm/v/antd-css-utilities)
 
-Basic CSS utilities for ant design. As ant design don't have their own CSS utilities, we are here to help you. You easily can use of this library with ant design without over writing any styles of ant design.
+Basic CSS utilities for ant design. As ant design don't have their own CSS utilities, we are here to help you. You easily can use this library with ant design. It is also usable with Vue.js and HTML.
 
 ## Installation
 
@@ -9,8 +9,8 @@ Basic CSS utilities for ant design. As ant design don't have their own CSS utili
 $ npm install antd-css-utilities
 ```
 
-## Add Into Project
-
+## Add Into Your Project
+### React.js (index.js)
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -26,6 +26,30 @@ ReactDOM.render(
     document.getElementById('root')
 );
 reportWebVitals();
+```
+### Vue.js (main.js)
+```js
+import App from './App.vue'
+import router from './router'
+import store from './store'
+++ import 'antd-css-utilities/utility.min.css'
+
+const app = createApp(App)
+app.use(store)
+app.use(router)
+app.mount('#app')
+```
+### HTML
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://zahinafsar.github.io/antd-utility-class/utility.min.css">
+</head>
+<body></body>
+</html>
 ```
 
 ## Margin & Padding
@@ -51,7 +75,7 @@ pb | padding-bottom
 <div class="ma-10" >
     <div class="ma-auto">Hello World!</div>
 </div>
-<!--value: 1-10 & auto -->
+<!--value: 1-16 & auto -->
 ```
 ## Flex Box
 ```
@@ -180,7 +204,7 @@ Device Width | Class Prefix
 
 ## References
 
-- https://mdzahin.github.io/antd-utility-class/index.css
+- https://zahinafsar.github.io/antd-utility-class/utility.min.css
 
 ## License
 
