@@ -204,7 +204,7 @@ Device Width | Class Prefix
 
 ## References
 
-- https://zahinafsar.github.io/antd-utility-class/utility.min.css
+- https://zahinafsar.github.io/antd-css-utilities/utility.min.css
 
 ## License
 
