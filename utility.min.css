@@ -359,6 +359,60 @@
 .ml-auto{
     margin-left:auto!important
 }
+.ma-0{
+    margin:0!important
+}
+.ma-1{
+    margin:4px!important
+}
+.ma-2{
+    margin:8px!important
+}
+.ma-3{
+    margin:12px!important
+}
+.ma-4{
+    margin:16px!important
+}
+.ma-5{
+    margin:20px!important
+}
+.ma-6{
+    margin:24px!important
+}
+.ma-7{
+    margin:28px!important
+}
+.ma-8{
+    margin:32px!important
+}
+.ma-9{
+    margin:36px!important
+}
+.ma-10{
+    margin:40px!important
+}
+.ma-11{
+    margin:44px!important
+}
+.ma-12{
+    margin:48px!important
+}
+.ma-13{
+    margin:52px!important
+}
+.ma-14{
+    margin:56px!important
+}
+.ma-15{
+    margin:60px!important
+}
+.ma-16{
+    margin:64px!important
+}
+.ma-auto{
+    margin:auto!important
+}
 /*PADDING*/
 .pa-0{
     padding:0!important
