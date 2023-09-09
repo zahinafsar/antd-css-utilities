@@ -1,7 +1,7 @@
 ## Ant Design CSS Utilities
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) ![npm version](https://img.shields.io/npm/v/antd-css-utilities)
 
-Basic CSS utilities for ant design. As ant design don't have their own CSS utilities, we are here to help you. You easily can use this library with ant design. It is also usable with Vue.js and HTML.
+Basic CSS utilities for ant design. Ant design doesn't have its own CSS utility classes, so we are here to help you. You can easily integrate and start using this library with ant design as well as other frameworks you like.
 
 ## Installation
 
@@ -16,7 +16,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 ++ import 'antd-css-utilities/utility.min.css'
 
 ReactDOM.render(
@@ -25,31 +24,23 @@ ReactDOM.render(
     </React.StrictMode>,
     document.getElementById('root')
 );
-reportWebVitals();
 ```
-### Vue.js (main.js)
-```js
-import App from './App.vue'
-import router from './router'
-import store from './store'
-++ import 'antd-css-utilities/utility.min.css'
 
-const app = createApp(App)
-app.use(store)
-app.use(router)
-app.mount('#app')
+### Setup Intellisense
+- Install VSCode extension [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+- Add this line in your `[PROJECT]/.vscode/settings.json` file
+```json
+{
+    "html-css-class-completion.includeGlobPattern": "node_modules/antd-css-utilities/utility.min.css"
+}
 ```
-### HTML
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://zahinafsar.github.io/antd-utility-class/utility.min.css">
-</head>
-<body></body>
-</html>
+
+### If you already use [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+- Add this line in your `[PROJECT]/.vscode/settings.json` file
+```json
+{
+    "html-css-class-completion.includeGlobPattern": "{[YOUR_PATTERN],node_modules/antd-css-utilities/utility.min.css}"
+}
 ```
 
 ## Margin & Padding
@@ -77,109 +68,22 @@ pb | padding-bottom
 </div>
 <!--value: 1-16 & auto -->
 ```
-## Flex Box
-```
-.flex-fill
-.flex-row
-.flex-column
-.flex-row-reverse
-.flex-column-reverse
-.flex-grow-0
-.flex-grow-1
-.flex-shrink-0
-.flex-shrink-1
-.flex-wrap
-.flex-nowrap
-.flex-wrap-reverse
-```
-## Flex Justify
-```
-.justify-start
-.justify-end
-.justify-center
-.justify-space-between
-.justify-space-around
-```
-## Flex Align
-```
-.align-start
-.align-end
-.align-center
-.align-baseline
-.align-stretch
-.align-content-start
-.align-content-end
-.align-content-center
-.align-content-space-between
-.align-content-space-around
-.align-content-stretch
-.align-self-auto
-.align-self-start
-.align-self-end
-.align-self-center
-.align-self-baseline
-.align-self-stretch
-```
-## Text
-```
-.text-center
-.text-no-wrap
-```
-## Display
-```
-.d-none 
-.d-inline 
-.d-inline-block 
-.d-block 
-.d-table 
-.d-table-row 
-.d-table-cell 
-.d-flex 
-.d-inline-flex 
-.d-grid 
-```
-## Position
-```
-.position-static 
-.position-relative 
-.position-absolute 
-.position-fixed 
-.position-sticky 
-```
-## Overflow
-```
-.overflow-visible 
-.overflow-hidden 
-.overflow-scroll 
-.overflow-auto 
-.overflow-x-visible 
-.overflow-x-hidden 
-.overflow-x-scroll 
-.overflow-x-auto 
-.overflow-y-visible 
-.overflow-y-hidden 
-.overflow-y-scroll 
-.overflow-y-auto 
-```
-## Z-Index
-```
-.z-1
-.z-10
-.z-100
-.z-1000
-.z-10000
-```
-## Height & Width
-```
-.w-90
-.w-100
-.w-auto
-.h-100
-.h-100vh
-.h-auto
-```
-## Responsiveness
+## Other utility support. [See All](https://zahinafsar.github.io/antd-css-utilities/classes.txt)
+
+- Flex
+    - Justify
+    - Align
+    - Direction
+    - Wrap
+    - Grow
+- Float
+- Overflow
+- Position
+- Display
+
+## Responsiveness (Web First)
 We have four responsive breakpoints `sm` `md` `lg` `xlg`
+
 Device Width | Class Prefix
 ------------- | -------------
 576px | sm
@@ -195,16 +99,10 @@ Device Width | Class Prefix
     <div class="d-block md-d-none">My device width is more than 768px</div>
 </div>
 ```
-## Responsive Prefix Available For
-- flex
-- Justify
-- Display
-- Align
-- Position
 
 ## References
 
-- https://zahinafsar.github.io/antd-css-utilities/utility.min.css
+https://zahinafsar.github.io/antd-css-utilities/utility.min.css
 
 ## License
 
