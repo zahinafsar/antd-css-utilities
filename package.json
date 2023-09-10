@@ -1,14 +1,14 @@
 {
   "name": "antd-css-utilities",
-  "version": "2.0.0",
+  "version": "2.0.3",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mdzahin/antd-utility-class",
+    "url": "https://github.com/zahinafsar/antd-utility-class",
     "directory": "packages/antd-css-utilities"
   },
   "scripts": {
-    "deploy": "git add . && git commit -m 'updated' && git push && npm publish",
+    "deploy": "npm publish",
     "build": "node builder.js && sass --style=compressed main.scss utility.min.css",
     "dev": "node esbuild.js",
     "commit": "git add . && gitmoji -c"
@@ -22,7 +22,7 @@
     "ant design",
     "style"
   ],
-  "dependencies": {
+  "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "esbuild": "^0.17.11",
@@ -31,10 +31,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass": "^1.66.1",
-    "typescript": "^5.0.2"
-  },
-  "devDependencies": {
-    "antd-css-utilities": "^1.0.3",
+    "typescript": "^5.0.2",
+    "antd-css-utilities": "^2.0.0",
     "autoprefixer": "^10.4.14",
     "chrome-types": "^0.1.176",
     "postcss": "^8.4.21",

@@ -48,22 +48,26 @@ const marginValue = Array.from({ length: 17 }).map((_, i) => ({
   value: `${i * 4}px`,
 }));
 
-
-const margins = marginValue.map((m) => {
-  return prefix.map(p => ({
-    [`${p.name}-${m.suffix}`]: {
-      ...p.generator(m.value),
-    },
-  }))
-}).flat();
+const margins = marginValue
+  .map((m) => {
+    return prefix.map((p) => ({
+      [`${p.name}-${m.suffix}`]: {
+        ...p.generator(m.value),
+      },
+    }));
+  })
+  .flat();
 
 const toObject = margins.reduce((acc, cur) => {
-    return {
-        ...acc,
-        ...cur,
-    }
+  return {
+    "ma-auto": {
+      margin: "auto",
+    },
+    ...acc,
+    ...cur,
+  };
 }, {});
 
 module.exports = {
-    margin: toObject,
+  margin: toObject,
 };

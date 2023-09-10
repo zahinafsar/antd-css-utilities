@@ -60,6 +60,9 @@ const paddings = paddingValue
 
 const toObject = paddings.reduce((acc, cur) => {
   return {
+    "pa-auto": {
+      padding: "auto",
+    },
     ...acc,
     ...cur,
   };
