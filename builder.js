@@ -9,6 +9,10 @@ const { overflow } = require("./src/styles/overflow");
 const { padding } = require("./src/styles/padding");
 const { position } = require("./src/styles/position");
 const { zIndex } = require("./src/styles/zIndex");
+const { grid } = require("./src/styles/grid");
+const { size } = require("./src/styles/size");
+const { typography } = require("./src/styles/text");
+const { common } = require("./src/styles/common");
 
 const styles = {
   ...display,
@@ -19,11 +23,22 @@ const styles = {
   ...padding,
   ...position,
   ...zIndex,
+  ...grid,
+  ...size,
+  ...typography,
+  ...common,
 };
 
-const css = (pref = "") => {
-  return Object.entries(styles)
+const css = (s, pref = "") => {
+  return Object.entries(s)
     .map(([key, value]) => {
+      if (value.meta) {
+        if (pref && !value.meta.responsive) {
+          return "";
+        } else {
+          return css(value.style);
+        }
+      }
       return `
           .${pref + key} {
             ${Object.entries(value)
@@ -40,12 +55,12 @@ const css = (pref = "") => {
 generator(
   "main.scss",
   `
-        ${css()}
+        ${css(styles)}
         ${screens
           .map((s) => {
             return `
-              @media (min-width: ${s.value}px) {
-                ${css(s.name + "-")}
+              @media (max-width: ${s.value}px) {
+                ${css(styles, s.name + "-")}
               }
             `;
           })

@@ -34,6 +34,15 @@ const flexWrap = {
   },
 };
 
+const gaps = {
+  ...Array.from({ length: 16 }).reduce((acc, curr, index) => {
+    acc[`gap-${++index}`] = {
+      gap: index * 2,
+    };
+    return acc;
+  }, {}),
+};
+
 const justifyContent = {
   "justify-start": {
     "justify-content": "flex-start",
@@ -120,9 +129,9 @@ const flex = {
   ...alignItems,
   ...alignContent,
   ...alignSelf,
+  ...gaps,
 };
 
 module.exports = {
-    flex,
+  flex,
 };
-

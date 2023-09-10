@@ -43,7 +43,7 @@ const prefix = [
   },
 ];
 
-const paddingValue = Array.from({ length: 16 }).map((_, i) => ({
+const paddingValue = Array.from({ length: 17 }).map((_, i) => ({
   suffix: `${i}`,
   value: `${i * 4}px`,
 }));

@@ -43,15 +43,16 @@ const prefix = [
   },
 ];
 
-const marginValue = Array.from({ length: 16 }).map((_, i) => ({
+const marginValue = Array.from({ length: 17 }).map((_, i) => ({
   suffix: `${i}`,
   value: `${i * 4}px`,
 }));
 
+
 const margins = marginValue.map((m) => {
   return prefix.map(p => ({
     [`${p.name}-${m.suffix}`]: {
-        ...p.generator(m.value),
+      ...p.generator(m.value),
     },
   }))
 }).flat();

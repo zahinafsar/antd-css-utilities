@@ -21938,9 +21938,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             }
           }
           var jsx2 = jsxWithValidationDynamic;
-          var jsxs = jsxWithValidationStatic;
+          var jsxs2 = jsxWithValidationStatic;
           exports.jsx = jsx2;
-          exports.jsxs = jsxs;
+          exports.jsxs = jsxs2;
         })();
       }
     }
@@ -21962,9 +21962,15 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var import_react_dom = __toESM(require_react_dom());
   var import_jsx_runtime = __toESM(require_jsx_runtime());
   var App = () => {
-    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "", children: "Hello" });
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "row", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "pa-6 font-bold col-1 sm-col-12", children: "Click me" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "pa-6 font-bold col-3 sm-col-12", children: "Click me" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "pa-6 font-bold col-2 sm-col-12", children: "Click me" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "pa-6 font-bold col-12 sm-col-12", children: "Click me" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "pa-6 font-bold col-2 sm-col-12", children: "Click me" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "pa-6 font-bold col-2 sm-col-12", children: "Click me" })
+    ] });
   };
-  var main_default = App;
   import_react_dom.default.render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(App, {}), document.getElementById("root"));
 })();
 /*! Bundled license information:
