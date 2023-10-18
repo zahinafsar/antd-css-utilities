@@ -43,7 +43,7 @@ const css = (s, pref = "") => {
           .${pref + key} {
             ${Object.entries(value)
               .map(([key, value]) => {
-                return `${key}: ${value};`;
+                return `${key}: ${value} !important;`;
               })
               .join("\n")}
           }

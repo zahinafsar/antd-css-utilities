@@ -21963,7 +21963,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var import_jsx_runtime = __toESM(require_jsx_runtime());
   var App = () => {
     return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "row", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "pa-6 font-bold col-1 sm-col-12", children: "Click me" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "pa-6 font-bold col-2 sm-col-12", children: "Click me" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "pa-6 font-bold col-3 sm-col-12", children: "Click me" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "pa-6 font-bold col-2 sm-col-12", children: "Click me" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "pa-6 font-bold col-12 sm-col-12", children: "Click me" }),

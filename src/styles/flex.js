@@ -30,14 +30,14 @@ const flexWrap = {
     "flex-wrap": "nowrap",
   },
   "flex-wrap-reverse": {
-    "flex-wrap": " wrap-reverse",
+    "flex-wrap": "wrap-reverse",
   },
 };
 
 const gaps = {
   ...Array.from({ length: 16 }).reduce((acc, curr, index) => {
     acc[`gap-${++index}`] = {
-      gap: index * 2,
+      gap: `${index * 2}px`,
     };
     return acc;
   }, {}),
