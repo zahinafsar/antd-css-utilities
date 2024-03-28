@@ -8,13 +8,15 @@ const prefix = [
   {
     name: "px",
     generator: (value) => ({
-      padding: `0px ${value}`,
+      "padding-left": value,
+      "padding-right": value,
     }),
   },
   {
     name: "py",
     generator: (value) => ({
-      padding: `${value} 0px`,
+      "padding-top": value,
+      "padding-bottom": value,
     }),
   },
   {

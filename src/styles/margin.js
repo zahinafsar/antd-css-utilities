@@ -8,13 +8,15 @@ const prefix = [
   {
     name: "mx",
     generator: (value) => ({
-      margin: `0px ${value}`,
+      "margin-left": value,
+      "margin-right": value,
     }),
   },
   {
     name: "my",
     generator: (value) => ({
-      margin: `${value} 0px`,
+      "margin-top": value,
+      "margin-bottom": value,
     }),
   },
   {
