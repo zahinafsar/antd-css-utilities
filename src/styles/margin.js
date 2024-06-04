@@ -43,6 +43,18 @@ const prefix = [
       "margin-bottom": value,
     }),
   },
+  {
+    name: "ms",
+    generator: (value) => ({
+      "margin-inline-start": value,
+    }),
+  },
+  {
+    name: "me",
+    generator: (value) => ({
+      "margin-inline-end": value,
+    }),
+  },
 ];
 
 const marginValue = Array.from({ length: 17 }).map((_, i) => ({

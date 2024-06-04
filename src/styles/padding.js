@@ -43,6 +43,18 @@ const prefix = [
       "padding-bottom": value,
     }),
   },
+  {
+    name: "ps",
+    generator: (value) => ({
+      "padding-inline-start": value,
+    }),
+  },
+  {
+    name: "pe",
+    generator: (value) => ({
+      "padding-inline-end": value,
+    }),
+  },
 ];
 
 const paddingValue = Array.from({ length: 17 }).map((_, i) => ({
