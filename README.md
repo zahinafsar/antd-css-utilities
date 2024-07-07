@@ -52,22 +52,26 @@ ReactDOM.render(
 
 ## Margin & Padding
 
-| Class Names | Meaning             |
-| ----------- | ------------------- |
-| ma          | margin(x & y axis)  |
-| mx          | margin(x axis)      |
-| my          | margin(y axis)      |
-| mt          | margin-top          |
-| ml          | margin-left         |
-| mr          | margin-right        |
-| mb          | margin-bottom       |
-| pa          | padding(x & y axis) |
-| px          | padding(x axis)     |
-| py          | padding(y axis)     |
-| pt          | padding-top         |
-| pl          | padding-left        |
-| pr          | padding-right       |
-| pb          | padding-bottom      |
+| Class Names | Meaning              |
+| ----------- | -------------------- |
+| ma          | margin(x & y axis)   |
+| mx          | margin(x axis)       |
+| my          | margin(y axis)       |
+| mt          | margin-top           |
+| ml          | margin-left          |
+| mr          | margin-right         |
+| mb          | margin-bottom        |
+| ms          | margin-inline-start  |
+| me          | margin-inline-end    |
+| pa          | padding(x & y axis)  |
+| px          | padding(x axis)      |
+| py          | padding(y axis)      |
+| pt          | padding-top          |
+| pl          | padding-left         |
+| pr          | padding-right        |
+| pb          | padding-bottom       |
+| ps          | padding-inline-start |
+| pe          | padding-inline-end   |
 
 #### Example:
 
